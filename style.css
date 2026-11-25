@@ -1,0 +1,563 @@
+:root {
+    font-size: clamp(6px, 4vw, 16px);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER  */
+.headerContainer {
+    background-color: #0171f9;
+}
+
+.header {
+    height: 80px;
+    background-color: #0171f9;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px 0 100px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.linksShow {
+    display: none;
+}
+
+.headerLinks {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: auto;
+    margin: 0;
+}
+
+.headerLinks a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.headerLinks a:hover {
+    background-color: #1a7ff9;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* END HEADER  */
+
+/* LANDING PAGE  */
+.landingPageContainer {
+    background-color: #0171f9;
+    border-radius: 0 0 100px 100px;
+}
+
+.landingPage {
+    display: flex;
+    background-color: #0171f9;
+    color: #fff;
+    padding: 100px 0;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 0 0 100px 100px;
+}
+
+.landingPage .leftSide {
+    padding-left: 20px;
+}
+
+.landingPage .slogan {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.landingPage .welcome {
+    font-size: x-large;
+    height: 10px;
+}
+
+.landingPage .description {
+    color: #000;
+    width: 80%;
+    font-weight: 500;
+}
+
+.searchBar {
+    position: relative;
+    margin-top: 100px;
+}
+
+.searchBar input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 45%;
+    height: 50px;
+    font-size: large;
+    padding-left: 20px;
+}
+
+.searchBar input::placeholder {
+    font-size: medium;
+}
+
+.btn {
+    border-radius: 50px;
+    height: 52px;
+    border: none;
+    font-weight: 600;
+    font-size: medium;
+    padding: 0 20px;
+    background-color: #ee626b;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9e4147;
+    cursor: pointer;
+}
+
+.searchBar .searchBtn {
+    position: absolute;
+    left: 300px;
+    text-wrap: nowrap;
+}
+
+.leftSide {
+    flex: 8;
+}
+
+.imageContainer {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* END LANDING PAGE  */
+
+/* TRENDING GAMES */
+.trendingContainer {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.trendingHeader,
+.mostHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.trendingHeader h1,
+.mostHeader h1,
+.categoryHeader h1 {
+    margin-top: 0;
+}
+
+.trendingContainer span,
+.mostContainer span,
+.categoryHeader span {
+    text-transform: uppercase;
+    color: #ee626b;
+    font-weight: 600;
+}
+
+.trendingCard,
+.mostCards,
+.categoryCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.trendingCard .card {
+    position: relative;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.trendingCard .card img {
+    border-radius: 20px;
+}
+
+.trendingCard .card .cardInfo {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 0 0 20px 20px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trendingCard .card .cardName {
+    padding: 0 20px;
+}
+
+.trendingCard .cardName h3 {
+    margin-top: 0;
+}
+
+.trendingCard .cardName p {
+    color: gray;
+    margin-bottom: 0;
+}
+
+.trendingCard .cardInfo .icon img {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.trendingCard .cardInfo .icon {
+    margin-right: 20px;
+}
+
+.trendingCard .cardInfo img:hover {
+    transform: scale(1.3);
+}
+
+/* END TRENDING GAMES */
+
+/* MOST PLAYED  */
+.cardImg {
+    width: fit-content;
+}
+
+.cardImg img {
+    border-radius: 20px;
+}
+
+.mostCards .card .cardImg {
+    margin: 0 auto;
+}
+
+.mostCards .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mostCards .cardInfo .genre {
+    margin-bottom: 0;
+    color: gray;
+}
+
+.mostContainer {
+    background-color: #eeeeee;
+    margin-top: 200px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.mostContainer .mostPlayed,
+.category {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* END MOST PLAYED  */
+
+/* CATEGORY GAMES  */
+
+.categoryContainer {
+    margin-top: 150px;
+}
+
+.category .categoryHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category .card .cardImg {
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.category .card .genre {
+    background-color: #0171f9;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0 30px 0;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 20px 20px 0 0;
+    width: 235px;
+    margin: 0 auto;
+}
+
+.category .categoryCards {
+    margin-top: 30px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.category .card:hover {
+    transform: scale(1.05);
+}
+
+/* END CATEGORY GAMES  */
+
+/* FOOTER  */
+.footerContainer {
+    background-color: #0171f9;
+    height: 150px;
+    border-radius: 100px 100px 0 0;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* END FOOTER  */
+
+/* FORM  */
+.formContainer {
+    display: flex;
+    padding: 40px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+.formContainer form {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 400px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 450px;
+}
+
+.formContainer form input,
+textarea {
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.formContainer input {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.formContainer textarea {
+    border-radius: 20px;
+    padding-top: 10px;
+    resize: none;
+}
+
+/* END FORM  */
+
+/* Media Queries */
+
+/* 3. All Devices That Lower Than 1400px */
+
+@media (max-width: 1400px) {
+    .header {
+        padding: 30px 50px 0 50px;
+    }
+
+    .trendingCard,
+    .mostCards,
+    .categoryCards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .leftSide {
+        padding-left: 50px;
+    }
+}
+
+/* 2. iPad */
+@media (max-width: 992px) {
+    .landingPage .slogan {
+        font-size: 35px;
+    }
+
+    .landingPage {
+        flex-direction: column-reverse;
+        padding: 20px 3px;
+        gap: 15px;
+    }
+
+    .imageContainer img {
+        width: 70%;
+        max-width: 280px;
+        object-fit: cover;
+    }
+
+    .searchBar {
+        margin: 40px auto;
+    }
+
+    .headerLinks {
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 55%;
+    }
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .linksShow {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        justify-content: space-between;
+        align-items: center;
+        height: 22px;
+    }
+
+    .linksShow div {
+        background-color: #04ffff;
+        height: 3px;
+        width: 80%;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+    #hamburgerMenuInput:checked~.navLinks {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        width: 80%;
+        z-index: 50;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #0b4ec2;
+        border-radius: 30px;
+        box-shadow: 0 0 1 1px rgba(255, 255, 255, 0.3);
+        transform: translateX(-50%);
+    }
+
+    #hamburgerMenuInput:checked+label div:first-child {
+        transform: translateY(9.3px) rotate(45deg);
+    }
+
+    #hamburgerMenuInput:checked+label div:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    #hamburgerMenuInput:checked+label div:last-child {
+        transform: translateY(-9.65px) rotate(-45deg);
+    }
+}
+
+/* 1. Smart Phones */
+
+@media (max-width: 768px) {
+    .searchBar input {
+        width: 60vw;
+    }
+
+    .searchBtn {
+        left: 55vw !important;
+        font-size: 0.75rem;
+        padding: 0 10px;
+    }
+
+    .footerContainer {
+        padding: 30px;
+    }
+
+    .trendingCard,
+    .mostCards,
+    .categoryCards {
+        flex-flow: column wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .mostCards .card,
+    .categoryCards .card {
+        width: 80%;
+    }
+
+    .landingPage .slogan {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .headerLinks {
+        width: 61%;
+    }
+
+    .trendingContainer {
+        padding: 10px;
+    }
+
+    .trendingHeader,
+    .mostHeader {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .formContainer form {
+        width: 260px;
+    }
+}
