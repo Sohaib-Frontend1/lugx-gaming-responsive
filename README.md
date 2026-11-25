@@ -1,6 +1,6 @@
 # LUGX Gaming — Responsive Implementation
 
-A responsive adaptation of the LUGX Gaming landing page. The original project and visual design were created by Yahya. The responsive implementation, mobile navigation, and layout optimization were completed by [Your Name].
+A responsive adaptation of the LUGX Gaming landing page. The original project and visual design were created by Yahya. The responsive implementation, mobile navigation, and layout optimization were completed by Sohaib Al-Shazly.
 
 ## Project Overview
 
@@ -54,14 +54,14 @@ The layout is adjusted at the following breakpoints:
 ## Credits
 
 - Original project and visual design: **Yahya**
-- Responsive implementation and mobile optimization: **[Your Name]**
+- Responsive implementation and mobile optimization: **Sohaib Al-Shazly**
 - Original template credit: **TemplateMo**, where applicable
 
 ## Rights and Usage
 
 The original project, visual design, and source structure remain the property of their original author, Yahya.
 
-The responsive implementation, including media queries, mobile navigation behavior, and layout adjustments, was performed by [Your Name].
+The responsive implementation, including media queries, mobile navigation behavior, and layout adjustments, was performed by Sohaib Al-Shazly.
 
 No open-source license is granted for the original design or the original source code beyond what the original author permits. This repository is published for demonstration, portfolio, and review purposes only.
 
